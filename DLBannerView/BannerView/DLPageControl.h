@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class DLPageControl;
 @protocol DLPageControlDelegate <NSObject>
 @optional
-- (void)pageControl:(DLPageControl *)pageControl didSelectPageAtIndex:(NSInteger)index;
+- (void)pageControl:(DLPageControl *)pageControl didSelectPageDotAtIndex:(NSInteger)index;
 @end
 
 @interface DLPageControl : UIControl

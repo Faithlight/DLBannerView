@@ -53,8 +53,8 @@
     UITouch *touch = [touches anyObject];
     if (touch.view != self) {
         NSInteger index = [self.dots indexOfObject:touch.view];
-        if ([self.delegate respondsToSelector:@selector(pageControl:didSelectPageAtIndex:)]) {
-            [self.delegate pageControl:self didSelectPageAtIndex:index];
+        if ([self.delegate respondsToSelector:@selector(pageControl:didSelectPageDotAtIndex:)]) {
+            [self.delegate pageControl:self didSelectPageDotAtIndex:index];
         }
     }
 }

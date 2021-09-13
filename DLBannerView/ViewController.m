@@ -17,8 +17,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     DLBannerView *banner = [[DLBannerView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 300) delegate:self];
-    banner.autoScroll = NO;
-    banner.infiniteLoop = NO;
+    banner.autoScroll = YES;
+    banner.infiniteLoop = YES;
     banner.pageDotColor = UIColor.whiteColor;
     banner.currentPageDotColor = UIColor.redColor;
         //    banner.pageDotImage = [UIImage imageWithColor:DDWhiteColor size:CGSizeMake(6, 6)];
